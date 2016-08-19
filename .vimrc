@@ -15,7 +15,6 @@ set laststatus=2
 set confirm
 set visualbell
 set t_vb=
-set mouse=a
 set cmdheight=2
 set number
 set notimeout ttimeout ttimeoutlen=200
