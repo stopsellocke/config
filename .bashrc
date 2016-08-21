@@ -38,7 +38,11 @@ case "$TERM" in
 esac
 
 if [ -f ~/.git-prompt.sh ]; then
-    source ~/.git-prompt.sh
+  source ~/.git-prompt.sh
+  export GIT_PS1_SHOWDIRTYSTAT=1
+  export GIT_PS1_SHOWSTASHSTATE=1
+  export GIT_PS1_SHOWUPSTREAM="auto"
+  export GIT_PS1_SHOWCOLORHINTS=1
 fi
 
 jobscount() {
