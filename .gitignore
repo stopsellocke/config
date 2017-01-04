@@ -1,5 +1,2 @@
 \.*.swp
-\.vim/bundle/*
-\.vim/\.*
-!\.vim/bundle/Vundle.vim
-!\.vim/bundle/.vundle
+\.vim/*
