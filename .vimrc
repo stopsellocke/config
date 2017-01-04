@@ -8,6 +8,7 @@ call vundle#end()
 Plugin 'align'
 Plugin 'snipMate'
 Plugin 'surround.vim'
+Plugin 'AutoComplPop'
 
 filetype indent plugin on
 syntax on
