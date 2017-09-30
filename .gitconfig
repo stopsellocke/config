@@ -22,7 +22,7 @@
   changed = yellow bold
   untracked = red bold
 [url "ssh://git@github.com/"]
-  insteadOf = gh:
+  insteadOf = https://github.com/:
 [alias]
   st = status
   co = checkout
