@@ -1,2 +1,5 @@
 alias hhmux="tmux attach -t hh || tmux new -s hh"
 alias vim="vim -o"
+
+alias ls="ls --color=tty"
+alias l="ls -al"
