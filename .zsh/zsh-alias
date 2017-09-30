@@ -1,0 +1,2 @@
+alias hhmux="tmux attach -t hh || tmux new -s hh"
+alias vim="vim -o"

@@ -1,0 +1,41 @@
+
+
+export TERM="xterm-256color"
+
+# Set less options
+if [[ -x $(which less 2> /dev/null) ]]
+then
+    export PAGER="less"
+    export LESS="--ignore-case --LONG-PROMPT --QUIET --chop-long-lines -Sm --RAW-CONTROL-CHARS --quit-if-one-screen --no-init"
+    export LESSHISTFILE='-'
+    if [[ -x $(which lesspipe 2> /dev/null) ]]
+    then
+	LESSOPEN="| lesspipe %s"
+	export LESSOPEN
+    fi
+fi
+
+
+# Set default editor
+if [[ -x $(which vim 2> /dev/null) ]]
+then
+    export EDITOR="vim"
+    export USE_EDITOR=$EDITOR
+    export VISUAL=$EDITOR
+fi
+
+
+# Zsh settings for history
+export HISTIGNORE="&:ls:[bf]g:exit:reset:clear:cd:cd ..:cd..:zh"
+export HISTSIZE=25000
+export HISTFILE=~/.zsh_history
+export SAVEHIST=10000
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_REDUCE_BLANKS
+setopt HIST_VERIFY
+
+export LANG=de_DE.UTF-8
+export LANGUAGE=de_DE:en
+

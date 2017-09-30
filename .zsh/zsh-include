@@ -1,0 +1,22 @@
+
+# Default settings
+if [ -f $HOME/.zsh/zsh-default ]
+then
+    . $HOME/.zsh/zsh-default
+fi
+
+
+# Alias settings
+if [ -f $HOME/.zsh/zsh-alias ]
+then
+    . $HOME/.zsh/zsh-alias
+fi
+
+
+# Powerlevel prompt settings
+if [ -f $HOME/.zsh/zsh-powerlevel ]
+then
+    . $HOME/.zsh/zsh-powerlevel
+fi
+
+
