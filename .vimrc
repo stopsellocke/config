@@ -5,9 +5,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 call vundle#end()
 
-Plugin 'align'
+Plugin 'godlygeek/tabular' " align
 Plugin 'snipMate'
-Plugin 'AutoComplPop'
+Plugin 'ervandew/supertab' " autocomplete with tab
 Plugin 'Syntastic'
 Plugin 'fugitive.vim'
 Plugin 'vim-airline/vim-airline'
@@ -101,4 +101,4 @@ nnoremap <C-L> :nohl<CR><C-L>                   " reset search highlight
 nnoremap <Tab> <C-W><C-W>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <F12> :call <SID>ToggleMouse()<CR>
-
+vmap     a     :Tabularize /=>\?<CR>/           " align by '=' and '=>'
