@@ -3,7 +3,6 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-call vundle#end()
 
 Plugin 'godlygeek/tabular' " align
 Plugin 'snipMate'
@@ -16,6 +15,7 @@ Plugin 'The-NERD-tree'
 Plugin 'ctrlp.vim'
 Plugin 'commentary.vim'
 Plugin 'flazz/vim-colorschemes'
+call vundle#end()
 
 filetype indent plugin on
 syntax on
