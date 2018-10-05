@@ -64,10 +64,13 @@ let g:airline#extensions#syntastic#enabled = 1    " Enable syntastic plugin
 function! GetMouseMode()
   return "MOUSE"
 endfunction
-call airline#parts#define_function('mouse', 'GetMouseMode')
-call airline#parts#define_condition('mouse', '&mouse == "a"')
-call airline#parts#define_accent('mouse', 'bold')
-let g:airline_section_a = airline#section#create_left(['mode', 'crypt', 'paste', 'mouse', 'spell', 'iminsert'])
+try
+  call airline#parts#define_function('mouse', 'GetMouseMode')
+  call airline#parts#define_condition('mouse', '&mouse == "a"')
+  call airline#parts#define_accent('mouse', 'bold')
+  let g:airline_section_a = airline#section#create_left(['mode', 'crypt', 'paste', 'mouse', 'spell', 'iminsert'])
+catch
+endtry
 
 
 "=============Commentary change PHP comment from /**/ to //===============
