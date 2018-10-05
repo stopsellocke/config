@@ -41,6 +41,11 @@ then
 fi
 
 linkFile ".vimrc"
+if [ -x "$(command -v vim)" ];
+then
+  vim +PluginInstall +qall
+fi
+
 linkFile ".gitconfig"
 linkFile ".tmux.conf"
 
