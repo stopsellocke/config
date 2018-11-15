@@ -8,7 +8,7 @@ function linkFile {
     then
       if [ ! -d ~/backup ]
       then
-        mkdir -p "~/backup"
+        mkdir -p ~/backup
       fi
       cp -ap ~/$1 ~/backup
     fi
@@ -21,17 +21,6 @@ function linkFile {
 linkFile ".bashrc"
 linkFile ".zsh"
 linkFile ".zshrc"
-# oh-my-zsh
-if [ ! -d ~/.zsh/.oh-my-zsh ]
-then
-  $(git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.zsh/.oh-my-zsh)
-fi
-
-# powerlevel9k
-if [ ! -d ~/.zsh/.oh-my-zsh/custom/themes/powerlevel9k ]
-then
-  $(git clone https://github.com/bhilburn/powerlevel9k.git ~/.zsh/.oh-my-zsh/custom/themes/powerlevel9k)
-fi
 
 linkFile ".vim"
 # vim vundle

@@ -1,0 +1,8 @@
+##################################
+#          POWERLINE9K           #
+##################################
+if [ -f $HOME/.zsh/zsh-theme-powerlevel9k ]
+then
+    . $HOME/.zsh/zsh-theme-powerlevel9k
+fi
+
