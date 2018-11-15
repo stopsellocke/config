@@ -5,8 +5,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'godlygeek/tabular' " align
-Plugin 'snipMate'
 Plugin 'ervandew/supertab' " autocomplete with tab
+Plugin 'ervandew/snipmate.vim'
 Plugin 'Syntastic'
 Plugin 'fugitive.vim'
 Plugin 'vim-airline/vim-airline'
@@ -44,6 +44,8 @@ set incsearch                          " show search matches as you type
 set pastetoggle=<F2>                   " toggle paste-mode with F2
 silent! colorscheme molokai            " default colorscheme (wombat/molokai)
 
+"=============Supertab===============
+let g:SuperTabNoCompleteAfter = ['^', ',', '\s']
 
 "=============Syntastic===============
 let g:syntastic_always_populate_loc_list = 1
