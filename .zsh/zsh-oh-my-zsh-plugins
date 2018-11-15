@@ -1,8 +1,27 @@
-if [ ! -f $HOME/.zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]
+##################################
+#      SYNTAX-HIGHLIGHTING       #
+##################################
+if [ ! -d $HOME/.zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]
 then
   $(git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting)
   $(chmod g-w,o-w ~/.zsh/.oh-my-zsh/custom/plugins && chmod g-w,o-w ~/.zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting)
 fi
 
-plugins=(git zsh-syntax-highlighting)
+##################################
+#        AUTOSUGGESTIONS         #
+##################################
+if [ ! -d $HOME/.zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]
+then
+  $(git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions)
+  $(chmod g-w,o-w ~/.zsh/.oh-my-zsh/custom/plugins && chmod g-w,o-w ~/.zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions)
+fi
 
+plugins=(git tmux zsh-syntax-highlighting zsh-autosuggestions colored-man-pages)
+
+##################################
+#         CONFIGURATION          #
+##################################
+
+#TMUX
+#ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_FIXTERM=true
