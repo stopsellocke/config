@@ -4,7 +4,7 @@
 if [ ! -d $HOME/.zsh/.oh-my-zsh ]
 then
   $(git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.zsh/.oh-my-zsh)
-  $(chmod g-w,o-w ~/.zsh/.oh-my-zsh && chmod g-w,o-w ~/.zsh/.oh-my-zsh/plugins && chmod g-w,o-w ~/.zsh/.oh-my-zsh/plugins/git)
+  $(chmod g-w,o-w ~/.zsh/.oh-my-zsh && chmod g-w,o-w ~/.zsh/.oh-my-zsh/plugins && chmod g-w,o-w ~/.zsh/.oh-my-zsh/plugins/git && chmod g-w,o-w ~/.zsh/.oh-my-zsh/plugins/colored-man-pages && chmod g-w,o-w ~/.zsh/.oh-my-zsh/plugins/tmux)
 fi
 
 
