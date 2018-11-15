@@ -1,0 +1,7 @@
+if [ ! -f $HOME/.zsh/.oh-my-zsh/custom/themes/bullet-train.zsh-theme ]
+then
+  $(wget http://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme -O ~/.zsh/.oh-my-zsh/custom/themes/bullet-train.zsh-theme)
+fi
+
+ZSH_THEME="bullet-train"
+

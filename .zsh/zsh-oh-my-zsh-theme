@@ -1,8 +1,24 @@
 ##################################
 #          POWERLINE9K           #
 ##################################
-if [ -f $HOME/.zsh/zsh-theme-powerlevel9k ]
+#if [ -f $HOME/.zsh/zsh-theme-powerlevel9k ]
+#then
+#    . $HOME/.zsh/zsh-theme-powerlevel9k
+#fi
+
+##################################
+#          BULLET-TRAIN          #
+##################################
+#if [ -f $HOME/.zsh/zsh-theme-bullet-train ]
+#then
+#    . $HOME/.zsh/zsh-theme-bullet-train
+#fi
+
+##################################
+#            AGNOSTER            #
+##################################
+if [ -f $HOME/.zsh/zsh-theme-agnoster ]
 then
-    . $HOME/.zsh/zsh-theme-powerlevel9k
+    . $HOME/.zsh/zsh-theme-agnoster
 fi
 
