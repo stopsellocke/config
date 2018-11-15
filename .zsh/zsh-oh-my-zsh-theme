@@ -9,16 +9,16 @@
 ##################################
 #          BULLET-TRAIN          #
 ##################################
-#if [ -f $HOME/.zsh/zsh-theme-bullet-train ]
-#then
-#    . $HOME/.zsh/zsh-theme-bullet-train
-#fi
+if [ -f $HOME/.zsh/zsh-theme-bullet-train ]
+then
+    . $HOME/.zsh/zsh-theme-bullet-train
+fi
 
 ##################################
 #            AGNOSTER            #
 ##################################
-if [ -f $HOME/.zsh/zsh-theme-agnoster ]
-then
-    . $HOME/.zsh/zsh-theme-agnoster
-fi
+#if [ -f $HOME/.zsh/zsh-theme-agnoster ]
+#then
+#    . $HOME/.zsh/zsh-theme-agnoster
+#fi
 
