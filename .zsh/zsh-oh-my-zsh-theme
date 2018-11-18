@@ -1,24 +1,20 @@
+#ZSH_THEME="bullet-train"
+#ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
 ##################################
 #          POWERLINE9K           #
 ##################################
-#if [ -f $HOME/.zsh/zsh-theme-powerlevel9k ]
-#then
-#    . $HOME/.zsh/zsh-theme-powerlevel9k
-#fi
+if [ $ZSH_THEME = "powerlevel9k/powerlevel9k" ] && [ -f $HOME/.zsh/zsh-theme-powerlevel9k ]
+then
+    . $HOME/.zsh/zsh-theme-powerlevel9k
+fi
 
 ##################################
 #          BULLET-TRAIN          #
 ##################################
-if [ -f $HOME/.zsh/zsh-theme-bullet-train ]
+if [ $ZSH_THEME = "bullet-train" ] && [ -f $HOME/.zsh/zsh-theme-bullet-train ]
 then
     . $HOME/.zsh/zsh-theme-bullet-train
 fi
-
-##################################
-#            AGNOSTER            #
-##################################
-#if [ -f $HOME/.zsh/zsh-theme-agnoster ]
-#then
-#    . $HOME/.zsh/zsh-theme-agnoster
-#fi
 
