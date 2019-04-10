@@ -3,7 +3,10 @@ then
   $(git clone https://github.com/bhilburn/powerlevel9k.git ~/.zsh/.oh-my-zsh/custom/themes/powerlevel9k)
 fi
 
+#POWERLEVEL9K_MODE='awesome-fontconfig'
+
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(icons_test)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs time)
 
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='006'
